@@ -16,10 +16,13 @@
                     </h1>
                     <section class="todo-list">
                         <ul>
-                            <li v-for="todoElement in todoList">
+                            <li v-for="todoElement in todoList" :class="todoElement.completed ? 'text-decoration-line-through' : ''">
                                 {{ todoElement.name }}
                             </li>
                         </ul>
+                    </section>
+                    <section class="user-input">
+                        <input type="text" class="input-group" @keyup.enter="addTask(newTaskName)" v-model="newTaskName">
                     </section>
                 </div>
             </div>

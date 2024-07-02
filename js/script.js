@@ -5,6 +5,7 @@ const { createApp } = Vue
       return {
         todoList : [],
         apiUrl: './api/get_all_list.php',
+        newTaskName: '',
       }
     },
 
@@ -22,6 +23,14 @@ const { createApp } = Vue
                 // always executed
               });  
             
+        },
+        addTask(taskToAdd){
+            newTodoOgj = {
+                name: taskToAdd,
+                completed: false
+            }
+            this.todoList.push(newTodoOgj);
+            this.newTaskName='';
         }
     },
 
