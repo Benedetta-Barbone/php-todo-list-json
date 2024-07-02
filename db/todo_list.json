@@ -1,0 +1,45 @@
+{
+    "tasks" : [
+    {
+        "name": "pulire la casa",
+        "completed": false
+    },
+    {
+        "name": "fare la spesa",
+        "completed": true
+    },
+    {
+        "name": "portare fuori il cane",
+        "completed": false
+    },
+    {
+        "name": "preparare la cena",
+        "completed": true
+    },
+    {
+        "name": "stirare i panni",
+        "completed": false
+    },
+    {
+        "name": "chiamare il meccanico",
+        "completed": true
+    },
+    {
+        "name": "allenamento",
+        "completed": false
+    },
+    {
+        "name": "studiare",
+        "completed": true
+    },
+    {
+        "name": "leggere un libro",
+        "completed": false
+    },
+    {
+        "name": "fare gli gnocchi",
+        "completed": true
+    }
+]
+
+}

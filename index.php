@@ -7,8 +7,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <main class="app">
-
+    <main id="app">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <h1>
+                        Todo List JSON
+                    </h1>
+                    <section class="todo-list">
+                        <ul>
+                            <li v-for="todoElement in todoList">
+                                {{ todoElement.name }}
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
     </main>    
 
 
